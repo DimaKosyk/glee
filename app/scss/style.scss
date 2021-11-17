@@ -39,12 +39,7 @@
 
 .user-nav{
   display: flex;
-  &__link{
-    position: relative;
-    display: block;
-    margin: 0 auto;
-  }
-  &__link-finder{
+  &__finder{
     position: relative;
     width: 50px;
     height: 50px;
@@ -52,8 +47,15 @@
     border-radius: 50%;
     margin-right: 25px;
   }
-  &__link-finder img,
-  &__link-profile img{
+  &__profile{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+  }
+  &__finder img,
+  &__profile img{
     position: absolute;
     margin: auto;
     top: 0;
@@ -61,34 +63,39 @@
     bottom: 0;
     right: 0;
   }
-  &__link-box{
+  &__box{
     display: flex;
     align-items: center;
-    width: 180px;
-    height: 50px;
     margin-right: 25px;
-    background-color: #fcd7b6;
     border-radius: 50px;
-  }
-  &__link-before + .user-nav__link-before::before{
-    content: "";
-    border-left: 1px solid #fff;
-  }
-  &__link-profile{
+    padding: 0 22px;
+    background-color: #fcd7b6;
     position: relative;
-    width: 50px;
-    height: 50px;
-    background-color: #a3bbc8;
-    border-radius: 50%;
+  }
+  &__box-inner{
+    position: relative;
+    margin: 0 9px;
+  }
+  &__box-inner + .user-nav__box-inner::before{
+    content: "";
+    height: 32px;
+    width: 1px;
+    background-color: #fde7d3;
+    position: absolute;
+    top: 8px;
+    right: 55px;
+  }
+  &__link-img{
+    margin: 0 auto;
+    padding: 16px;
   }
   &__num{
     position: absolute;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    text-align: center;
-    top: -9px;
-    right: -12px;
+    top: 7px;
+    right: 6px;
     text-align: center;
     font-size: 10px;
     line-height: 17px;
