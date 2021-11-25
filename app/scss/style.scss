@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -193,6 +194,218 @@
     content: "";
     padding-left: 15px;
     border-left: 1px solid $footer-link-default;
+  }
+}
+
+.top-slider{
+  &__inner{
+    background-image: url('../images/top-slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 225px 0 75px;
+  }
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__title{
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    max-width: 470px;
+    margin-bottom: 40px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 30px;
+    color: $accent;
+    @extend %rubik-400;
+    margin-bottom: 40px;
+  }
+  &__link{
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    padding: 23px 18px 23px 25px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 205px;
+    li{
+      padding: 0 12px;
+      button{
+        padding: 0;
+        font-size: 11px;
+        line-height: 9px;
+        background-color: #fde3cc;
+        width: 29px;
+        height: 29px;
+        border: none;
+        border-radius: 50%;
+        color: #243f4d;
+        @extend %rubik-500;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  &__bottom{
+    background: #fef7f0;
+  }
+  &__bottom-items{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  &__bottom-item{
+    display: flex;
+    padding: 50px 0 45px;
+    position: relative;
+  }
+  &__bottom-inner{
+    margin-left: 25px;
+  }
+  &__bottom-title{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #414141;
+  }
+  &__bottom-text{
+    max-width: 215px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+  &__bottom-item + .top-slider__bottom-item::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: -160px;
+    background-color: #e8e4df;
+  }
+}
+
+.products{
+  padding: 75px 0 60px;
+  &__title{
+    text-align: center;
+    font-size: 36px;
+    color: #191919;
+    @extend %dmsans-700;
+    margin-bottom: 37px;
+  }
+  &__filter{
+    display: flex;
+    justify-content: center;
+  }
+  &__filter-btn{
+    border: none;
+    background-color: transparent;
+    color: #8b8b8b;
+    @extend %dmsans-700;
+    margin-bottom: 82px;
+  }
+  &__filter-btn + .products__filter-btn{
+    margin-left: 20px;
+  }
+  &__filter-btn:active{
+    color: #292929;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 28px;
+    margin-bottom: 12px;
+  }
+  &__item{
+    height: 380px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+  &__item-img{
+    margin-top: 27px;
+  }
+  &__item-content{
+    text-align: center;
+  }
+  &__item-title{
+    color: #243f4d;
+    @extend %dmsans-500;
+  }
+  &__item-price{
+    color: #a3bbc8;
+    @extend %dmsans-700;
+  }
+  &__item-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 270px;
+    margin-bottom: 20px;
+  }
+  &__hover{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(300%);
+    transition: all .3s;
+  }
+  &__hover-link{
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    path{
+      fill: #a8becb;
+    }
+  }
+  &__hover-link{
+    display: inherit;
+    path{
+      transition: all .3s;
+    }
+  }
+  &__item:hover{
+    .products__hover{
+      transform: translateY(0);
+    }
+  }
+  &__hover-link:hover{
+    background-color: #a3bbc8;
+    path{
+      fill: #fff;
+    }
+  }
+  &__hover-link svg{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__hover-link + .products__hover-link{
+    margin-left: 16px;
   }
 }
 
