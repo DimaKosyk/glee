@@ -31,3 +31,11 @@ $footer-link-default: #7b7b7b;
   font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
 }
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

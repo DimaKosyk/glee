@@ -63,3 +63,28 @@ a{
     color: inherit;
   }
 }
+
+.pagination{
+  padding-top: 70px;
+  &__list{
+    display: flex;
+    margin-right: 15px;
+  }
+  &__link{
+    padding: 17px 20px;
+    border: 1px solid #a3bbc8;
+    color: #243f4d;
+  }
+  &__link--active{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+  &__item + .pagination__item{
+    margin-left: 15px;
+  }
+  &__next-link{
+    padding: 9px 18px 9px 20px;
+    border: 1px solid #a3bbc8;
+    color: #243f4d;
+  }
+}
