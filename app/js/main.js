@@ -1,5 +1,29 @@
 $(function(){
 
+  $('.product-detail__top-item').on('click', function(e){
+    e.preventDefault();
+    $('.product-detail__top-item').removeClass('product-detail__top-item--active');
+    $(this).addClass('product-detail__top-item--active');
+
+    $('.product-detail__content-item').removeClass('product-detail__content-item--active');
+    $($(this).attr('href')).addClass('product-detail__content-item--active');
+  });
+
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true
+  });
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
@@ -13,7 +37,7 @@ $(function(){
     },
   });
 
-  $('.select-style').styler();
+  $('.select-style, .product-detail__num').styler();
 
   $('.top-slider__items').slick({
     arrows: false,
@@ -21,6 +45,19 @@ $(function(){
     fade: true,
     dots: true,
     autoplaySpeed: 2000
+  });
+
+  $('.product-detail__related-slider').slick({
+    slidesToShow: 4,
+    arrows: false
+  });
+
+  $('.related-prev').on('click', function(e) {
+    $('.product-detail__related-slider').slick('slickPrev');
+  });
+
+  $('.related-next').on('click', function (e) {
+    $('.product-detail__related-slider').slick('slickNext');
   });
 
   $('.products__filter-btn').on('click', function () {
@@ -33,14 +70,9 @@ $(function(){
     $(this).addClass('design__filter-btn--active');
   });
 
-  $('.cart-btn').on('click', function () {
-    $('.cart-btn').removeClass('cart-btn--active');
-    $('.product-list__add-btn').addClass('cart-btn--active');
-  });
-
-  $('.product-list__add-btn').on('click', function () {
-    $('.product-list__add-btn').removeClass('cart-btn--active');
-    $('.cart-btn').addClass('cart-btn--active');
+  $('.product-list__cart-btn').on('click', function () {
+    $('.product-list__cart-btn').removeClass('cart-btn--active');
+    $(this).addClass('cart-btn--active');
   });
 
   $(".star").rateYo({
