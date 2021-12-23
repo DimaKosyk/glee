@@ -67,7 +67,7 @@
     <section class="top">
       <div class="top__content">
         <h2 class="top__title title">
-          Blog
+          Blog Details
         </h2>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
@@ -81,21 +81,41 @@
                 Blog
               </a>
             </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Blog details
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="blog-page">
+    <section class="blog-page blog-details">
       <div class="container">
         <div class="blog-page__inner">
-          <div class="blog-page__content">
-
-            <div class="blog-page__item">
-              <div class="blog-page__item-image">
-                <img src="images/blog/blog-page/1.jpg" alt="blog image">
-                <div class="blog-page__item-box">
-                  <div class="blog-page__box-date">
+          <div class="blog-page__content blog-details__content">
+            <div class="blog-page__item-image">
+              <img src="images/blog/blog-page/1.jpg" alt="blog image">
+              <div class="blog-page__item-box">
+                <div class="blog-page__box-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #fff;
+                          fill-rule: evenodd;
+                        }
+                      </style>
+                    </defs>
+                    <path class="cls-1"
+                      d="M1365.9,6011.26a0.828,0.828,0,0,0-.39,1.11,8.243,8.243,0,0,1,.82,3.63,8.33,8.33,0,1,1-8.33-8.33,8.26,8.26,0,0,1,5.17,1.79,0.832,0.832,0,0,0,1.04-1.3A10,10,0,1,0,1368,6016a9.866,9.866,0,0,0-.99-4.35,0.828,0.828,0,0,0-1.11-.39h0Zm0,0-7.9-1.93a0.837,0.837,0,0,0-.83.84V6016a0.828,0.828,0,0,0,.83.83h4.17a0.83,0.83,0,0,0,0-1.66h-3.34v-5a0.837,0.837,0,0,0-.83-0.84h0Zm0,0"
+                      transform="translate(-1348 -6006)" />
+                  </svg>
+                  <span class="blog-page__item-date">28 JANUARY, 2020</span>
+                </div>
+                <div class="blog-page__box-author">
+                  <a class="blog-page__author-link" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
                       <defs>
                         <style>
@@ -106,235 +126,182 @@
                         </style>
                       </defs>
                       <path class="cls-1"
-                        d="M1365.9,6011.26a0.828,0.828,0,0,0-.39,1.11,8.243,8.243,0,0,1,.82,3.63,8.33,8.33,0,1,1-8.33-8.33,8.26,8.26,0,0,1,5.17,1.79,0.832,0.832,0,0,0,1.04-1.3A10,10,0,1,0,1368,6016a9.866,9.866,0,0,0-.99-4.35,0.828,0.828,0,0,0-1.11-.39h0Zm0,0-7.9-1.93a0.837,0.837,0,0,0-.83.84V6016a0.828,0.828,0,0,0,.83.83h4.17a0.83,0.83,0,0,0,0-1.66h-3.34v-5a0.837,0.837,0,0,0-.83-0.84h0Zm0,0"
-                        transform="translate(-1348 -6006)" />
+                        d="M1232.07,6018.93a9.954,9.954,0,0,0-3.8-2.39,5.78,5.78,0,1,0-6.54,0A10.04,10.04,0,0,0,1215,6026h1.56a8.44,8.44,0,0,1,16.88,0H1235A9.932,9.932,0,0,0,1232.07,6018.93Zm-11.29-7.15A4.22,4.22,0,1,1,1225,6016,4.221,4.221,0,0,1,1220.78,6011.78Z"
+                        transform="translate(-1215 -6006)" />
                     </svg>
-                    <span class="blog-page__item-date">28 JANUARY, 2020</span>
-                  </div>
-                  <div class="blog-page__box-author">
-                    <a class="blog-page__author-link" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
-                        <defs>
-                          <style>
-                            .cls-1 {
-                              fill: #fff;
-                              fill-rule: evenodd;
-                            }
-                          </style>
-                        </defs>
-                        <path class="cls-1"
-                          d="M1232.07,6018.93a9.954,9.954,0,0,0-3.8-2.39,5.78,5.78,0,1,0-6.54,0A10.04,10.04,0,0,0,1215,6026h1.56a8.44,8.44,0,0,1,16.88,0H1235A9.932,9.932,0,0,0,1232.07,6018.93Zm-11.29-7.15A4.22,4.22,0,1,1,1225,6016,4.221,4.221,0,0,1,1220.78,6011.78Z"
-                          transform="translate(-1215 -6006)" />
-                      </svg>
-                    </a>
-                    <a class="blog-page__item-author" href="#">BY ADMIN</a>
-                  </div>
+                  </a>
+                  <a class="blog-page__item-author" href="#">BY ADMIN</a>
                 </div>
               </div>
-              <h3 class="blog-page__item-title">
+            </div>
+            <div class="blog-details__content-text">
+              <h3>
                 Fonsectetur adipisicing eiusmod
               </h3>
-              <p class="blog-page__item-text">
+              <h4>
+                Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit,
+              </h4>
+              <p>
                 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
               </p>
-              <a class="blog-page__item-link" href="#">
-                View More
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="9px">
-                  <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                    d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 22.000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z" />
-                </svg>
-              </a>
-            </div>
-            <div class="blog-page__item">
-              <div class="blog-page__item-image">
-                <img src="images/blog/blog-page/2.jpg" alt="blog image">
-                <div class="blog-page__item-box">
-                  <div class="blog-page__box-date">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
-                      <defs>
-                        <style>
-                          .cls-1 {
-                            fill: #fff;
-                            fill-rule: evenodd;
-                          }
-                        </style>
-                      </defs>
-                      <path class="cls-1"
-                        d="M1365.9,6011.26a0.828,0.828,0,0,0-.39,1.11,8.243,8.243,0,0,1,.82,3.63,8.33,8.33,0,1,1-8.33-8.33,8.26,8.26,0,0,1,5.17,1.79,0.832,0.832,0,0,0,1.04-1.3A10,10,0,1,0,1368,6016a9.866,9.866,0,0,0-.99-4.35,0.828,0.828,0,0,0-1.11-.39h0Zm0,0-7.9-1.93a0.837,0.837,0,0,0-.83.84V6016a0.828,0.828,0,0,0,.83.83h4.17a0.83,0.83,0,0,0,0-1.66h-3.34v-5a0.837,0.837,0,0,0-.83-0.84h0Zm0,0"
-                        transform="translate(-1348 -6006)" />
-                    </svg>
-                    <span class="blog-page__item-date">28 JANUARY, 2020</span>
-                  </div>
-                  <div class="blog-page__box-author">
-                    <a class="blog-page__author-link" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
-                        <defs>
-                          <style>
-                            .cls-1 {
-                              fill: #fff;
-                              fill-rule: evenodd;
-                            }
-                          </style>
-                        </defs>
-                        <path class="cls-1"
-                          d="M1232.07,6018.93a9.954,9.954,0,0,0-3.8-2.39,5.78,5.78,0,1,0-6.54,0A10.04,10.04,0,0,0,1215,6026h1.56a8.44,8.44,0,0,1,16.88,0H1235A9.932,9.932,0,0,0,1232.07,6018.93Zm-11.29-7.15A4.22,4.22,0,1,1,1225,6016,4.221,4.221,0,0,1,1220.78,6011.78Z"
-                          transform="translate(-1215 -6006)" />
-                      </svg>
-                    </a>
-                    <a class="blog-page__item-author" href="#">BY ADMIN</a>
-                  </div>
+              <blockquote>
+                Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris
+                <span>Wiusmod tempor</span>
+              </blockquote>
+              <div class="blog-details__content-info">
+                <img src="images/blog/blog-details/1.jpg" alt="blog photo">
+                <div class="blog-details__content-box">
+                  <h4>Riusmod tempor incididunt</h4>
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  </p>
                 </div>
               </div>
-              <h3 class="blog-page__item-title">
-                Fonsectetur adipisicing elit,
-              </h3>
-              <p class="blog-page__item-text">
+              <h4>Kajtsal jervcm eoaspckred</h4>
+              <p>
                 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing
-                elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               </p>
-              <a class="blog-page__item-link" href="#">
-                View More
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="9px">
-                  <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                    d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 22.000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z" />
-                </svg>
-              </a>
-            </div>
-            <div class="blog-page__item">
-              <div class="blog-page__item-image">
-                <img src="images/blog/blog-page/3.jpg" alt="blog image">
-                <div class="blog-page__item-box">
-                  <div class="blog-page__box-date">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
-                      <defs>
-                        <style>
-                          .cls-1 {
-                            fill: #fff;
-                            fill-rule: evenodd;
-                          }
-                        </style>
-                      </defs>
-                      <path class="cls-1"
-                        d="M1365.9,6011.26a0.828,0.828,0,0,0-.39,1.11,8.243,8.243,0,0,1,.82,3.63,8.33,8.33,0,1,1-8.33-8.33,8.26,8.26,0,0,1,5.17,1.79,0.832,0.832,0,0,0,1.04-1.3A10,10,0,1,0,1368,6016a9.866,9.866,0,0,0-.99-4.35,0.828,0.828,0,0,0-1.11-.39h0Zm0,0-7.9-1.93a0.837,0.837,0,0,0-.83.84V6016a0.828,0.828,0,0,0,.83.83h4.17a0.83,0.83,0,0,0,0-1.66h-3.34v-5a0.837,0.837,0,0,0-.83-0.84h0Zm0,0"
-                        transform="translate(-1348 -6006)" />
-                    </svg>
-                    <span class="blog-page__item-date">28 JANUARY, 2020</span>
-                  </div>
-                  <div class="blog-page__box-author">
-                    <a class="blog-page__author-link" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
-                        <defs>
-                          <style>
-                            .cls-1 {
-                              fill: #fff;
-                              fill-rule: evenodd;
-                            }
-                          </style>
-                        </defs>
-                        <path class="cls-1"
-                          d="M1232.07,6018.93a9.954,9.954,0,0,0-3.8-2.39,5.78,5.78,0,1,0-6.54,0A10.04,10.04,0,0,0,1215,6026h1.56a8.44,8.44,0,0,1,16.88,0H1235A9.932,9.932,0,0,0,1232.07,6018.93Zm-11.29-7.15A4.22,4.22,0,1,1,1225,6016,4.221,4.221,0,0,1,1220.78,6011.78Z"
-                          transform="translate(-1215 -6006)" />
-                      </svg>
-                    </a>
-                    <a class="blog-page__item-author" href="#">BY ADMIN</a>
-                  </div>
-                </div>
-              </div>
-              <h3 class="blog-page__item-title">
-                Fsectetur adipisicing tempor incididunt
-              </h3>
-              <p class="blog-page__item-text">
-                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing
-                elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-              </p>
-              <a class="blog-page__item-link" href="#">
-                View More
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="9px">
-                  <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                    d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 22.000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z" />
-                </svg>
-              </a>
-            </div>
-            <div class="blog-page__item">
-              <div class="blog-page__item-image">
-                <img src="images/blog/blog-page/4.jpg" alt="blog image">
-                <div class="blog-page__item-box">
-                  <div class="blog-page__box-date">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
-                      <defs>
-                        <style>
-                          .cls-1 {
-                            fill: #fff;
-                            fill-rule: evenodd;
-                          }
-                        </style>
-                      </defs>
-                      <path class="cls-1"
-                        d="M1365.9,6011.26a0.828,0.828,0,0,0-.39,1.11,8.243,8.243,0,0,1,.82,3.63,8.33,8.33,0,1,1-8.33-8.33,8.26,8.26,0,0,1,5.17,1.79,0.832,0.832,0,0,0,1.04-1.3A10,10,0,1,0,1368,6016a9.866,9.866,0,0,0-.99-4.35,0.828,0.828,0,0,0-1.11-.39h0Zm0,0-7.9-1.93a0.837,0.837,0,0,0-.83.84V6016a0.828,0.828,0,0,0,.83.83h4.17a0.83,0.83,0,0,0,0-1.66h-3.34v-5a0.837,0.837,0,0,0-.83-0.84h0Zm0,0"
-                        transform="translate(-1348 -6006)" />
-                    </svg>
-                    <span class="blog-page__item-date">28 JANUARY, 2020</span>
-                  </div>
-                  <div class="blog-page__box-author">
-                    <a class="blog-page__author-link" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
-                        <defs>
-                          <style>
-                            .cls-1 {
-                              fill: #fff;
-                              fill-rule: evenodd;
-                            }
-                          </style>
-                        </defs>
-                        <path class="cls-1"
-                          d="M1232.07,6018.93a9.954,9.954,0,0,0-3.8-2.39,5.78,5.78,0,1,0-6.54,0A10.04,10.04,0,0,0,1215,6026h1.56a8.44,8.44,0,0,1,16.88,0H1235A9.932,9.932,0,0,0,1232.07,6018.93Zm-11.29-7.15A4.22,4.22,0,1,1,1225,6016,4.221,4.221,0,0,1,1220.78,6011.78Z"
-                          transform="translate(-1215 -6006)" />
-                      </svg>
-                    </a>
-                    <a class="blog-page__item-author" href="#">BY ADMIN</a>
-                  </div>
-                </div>
-              </div>
-              <h3 class="blog-page__item-title">
-                vonsectetur adipisicing elit
-              </h3>
-              <p class="blog-page__item-text">
-                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing
-                elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-              </p>
-              <a class="blog-page__item-link" href="#">
-                View More
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="9px">
-                  <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                    d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 22.000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z" />
-                </svg>
-              </a>
             </div>
 
-            <div class="pagination">
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a class="pagination__link pagination__link--active" href="#">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">3</a>
-                </li>
-              </ul>
-              <a class="pagination__next-link" href="#">Next</a>
+            <div class="blog-details__author">
+              <div class="blog-details__author-info">
+                <img class="blog-details__author-image" src="images/blog/blog-details/author.jpg" alt="author photo">
+                <div class="blog-details__author-description">
+                  <h3 class="blog-details__author-name">
+                    Mark N. Hernandez
+                  </h3>
+                  <p class="blog-details__author-position">
+                    Designer
+                  </p>
+                </div>
+              </div>
+              <div class="blog-details__author-social">
+                <div class="blog-details__author-tags">
+                  Tags:
+                  <a class="blog-details__tags-link" href="#">All</a><span>,</span>
+                  <a class="blog-details__tags-link" href="#">Trending</a>
+                </div>
+                <div class="blog-details__author-share">
+                  Share:
+                  <a class="blog-details__social-link" href="#">
+                    <img class="blog-details__social-img" src="images/blog/icons/facebook.svg" alt="social image">
+                  </a>
+                  <a class="blog-details__social-link" href="#">
+                    <img class="blog-details__social-img" src="images/blog/icons/twitter.svg" alt="social image">
+                  </a>
+                  <a class="blog-details__social-link" href="#">
+                    <img class="blog-details__social-img" src="images/blog/icons/instagram.svg" alt="social image">
+                  </a>
+                  <a class="blog-details__social-link" href="#">
+                    <img class="blog-details__social-img" src="images/blog/icons/google.svg" alt="social image">
+                  </a>
+                </div>
+              </div>
             </div>
 
+            <div class="blog-details__comments">
+              <h3 class="blog-details__comments-title">
+                3 Comments
+              </h3>
+              <div class="blog-details__comments-items">
+                <div class="blog-details__comments-item">
+                  <img class="blog-details__comments-image" src="images/blog/blog-details/comments/1.jpg" alt="author comment photo">
+                  <div class="blog-details__comments-inner">
+                    <div class="blog-details__comments-box">
+                      <h5 class="blog-details__comments-name">Delores G. Roberts</h5>
+                      <p class="blog-details__comments-date"><span>Add </span>11 Oct 2020</p>
+                    </div>
+                    <p class="blog-details__comments-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent
+                      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                    <a class="blog-details__comments-link" href="#">
+                      Reply
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="14px"
+                        viewBox="0 0 12 13" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill:#526278;fill-opacity:1;"
+                            d="M 5.101562 1.699219 L 5.699219 1.136719 C 5.949219 0.894531 6.355469 0.894531 6.605469 1.136719 L 11.8125 6.070312 C 12.0625 6.308594 12.0625 6.691406 11.8125 6.929688 L 6.605469 11.863281 C 6.355469 12.105469 5.945312 12.105469 5.699219 11.863281 L 5.101562 11.300781 C 4.847656 11.058594 4.855469 10.667969 5.113281 10.429688 L 8.339844 7.515625 L 0.644531 7.515625 C 0.285156 7.515625 0 7.242188 0 6.90625 L 0 6.09375 C 0 5.757812 0.285156 5.484375 0.644531 5.484375 L 8.339844 5.484375 L 5.113281 2.570312 C 4.851562 2.332031 4.84375 1.941406 5.101562 1.699219 Z M 5.101562 1.699219 " />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-details__comments-item comments-reply">
+                  <img class="blog-details__comments-image" src="images/blog/blog-details/comments/2.jpg" alt="author comment photo">
+                  <div class="blog-details__comments-inner">
+                    <div class="blog-details__comments-box">
+                      <h5 class="blog-details__comments-name">Shannon S. Williams</h5>
+                      <p class="blog-details__comments-date"><span>Add </span>11 Oct 2020</p>
+                    </div>
+                    <p class="blog-details__comments-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class
+                      aptent
+                      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                    <a class="blog-details__comments-link" href="#">
+                      Reply
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="14px"
+                        viewBox="0 0 12 13" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill:#526278;fill-opacity:1;"
+                            d="M 5.101562 1.699219 L 5.699219 1.136719 C 5.949219 0.894531 6.355469 0.894531 6.605469 1.136719 L 11.8125 6.070312 C 12.0625 6.308594 12.0625 6.691406 11.8125 6.929688 L 6.605469 11.863281 C 6.355469 12.105469 5.945312 12.105469 5.699219 11.863281 L 5.101562 11.300781 C 4.847656 11.058594 4.855469 10.667969 5.113281 10.429688 L 8.339844 7.515625 L 0.644531 7.515625 C 0.285156 7.515625 0 7.242188 0 6.90625 L 0 6.09375 C 0 5.757812 0.285156 5.484375 0.644531 5.484375 L 8.339844 5.484375 L 5.113281 2.570312 C 4.851562 2.332031 4.84375 1.941406 5.101562 1.699219 Z M 5.101562 1.699219 " />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-details__comments-item">
+                  <img class="blog-details__comments-image" src="images/blog/blog-details/comments/3.jpg" alt="author comment photo">
+                  <div class="blog-details__comments-inner">
+                    <div class="blog-details__comments-box">
+                      <h5 class="blog-details__comments-name">Nicholas R. Coley</h5>
+                      <p class="blog-details__comments-date"><span>Add </span>11 Oct 2020</p>
+                    </div>
+                    <p class="blog-details__comments-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class
+                      aptent
+                      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                    <a class="blog-details__comments-link" href="#">
+                      Reply
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="14px"
+                        viewBox="0 0 12 13" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill:#526278;fill-opacity:1;"
+                            d="M 5.101562 1.699219 L 5.699219 1.136719 C 5.949219 0.894531 6.355469 0.894531 6.605469 1.136719 L 11.8125 6.070312 C 12.0625 6.308594 12.0625 6.691406 11.8125 6.929688 L 6.605469 11.863281 C 6.355469 12.105469 5.945312 12.105469 5.699219 11.863281 L 5.101562 11.300781 C 4.847656 11.058594 4.855469 10.667969 5.113281 10.429688 L 8.339844 7.515625 L 0.644531 7.515625 C 0.285156 7.515625 0 7.242188 0 6.90625 L 0 6.09375 C 0 5.757812 0.285156 5.484375 0.644531 5.484375 L 8.339844 5.484375 L 5.113281 2.570312 C 4.851562 2.332031 4.84375 1.941406 5.101562 1.699219 Z M 5.101562 1.699219 " />
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form class="blog-details__form">
+              <h3 class="blog-details__form-title">
+                Leave A Comment
+              </h3>
+              <div class="blog-details__form-box" action="#">
+                <input class="blog-details__input-name" type="text" 
+                placeholder="Name">
+                <input class="blog-details__input-email blog-details__input-email--active" type="text" placeholder="Email">
+              </div>
+              <textarea class="blog-details__form-textarea" placeholder="Comment"></textarea>
+              <button class="blog-details__form-btn">
+                Post Comment
+              </button>
+            </form>
           </div>
+
           <div class="blog-page__aside">
 
             <div class="filter-search">
@@ -347,7 +314,7 @@
             </div>
 
             <div class="filter-category filter__item">
-              <h3 class="filter__title">CATEGORY</h3>
+              <h5 class="filter__title">CATEGORY</h5>
               <form class="filter-category__form" action="#">
                 <label class="filter-category__label">
                   <input class="filter-category__input" type="checkbox">
@@ -388,15 +355,15 @@
             </div>
 
             <div class="filter-posts">
-              <h3 class="filter__title">Recent Posts</h3>
+              <h5 class="filter__title">Recent Posts</h5>
 
               <div class="filter-posts__content">
                 <img class="filter-posts__image" src="images/blog/posts/1.jpg" alt="post image">
                 <div class="filter-posts__content-box">
                   <a class="filter-posts__content-link" href="#">
-                    <p class="filter-posts__content-text">
+                    <h6 class="filter-posts__content-text">
                       Corem ipsum dolor tetur adipisicing elit
-                    </p>
+                    </h6>
                   </a>
                   <div class="filter-posts__box-date">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
@@ -421,9 +388,9 @@
                 <img class="filter-posts__image" src="images/blog/posts/2.jpg" alt="post image">
                 <div class="filter-posts__content-box">
                   <a class="filter-posts__content-link" href="#">
-                    <p class="filter-posts__content-text">
+                    <h6 class="filter-posts__content-text">
                       Fdipisicing elit, sed do eiusmod tempor
-                    </p>
+                    </h6>
                   </a>
                   <div class="filter-posts__box-date">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
@@ -448,9 +415,9 @@
                 <img class="filter-posts__image" src="images/blog/posts/3.jpg" alt="post image">
                 <div class="filter-posts__content-box">
                   <a class="filter-posts__content-link" href="#">
-                    <p class="filter-posts__content-text">
+                    <h6 class="filter-posts__content-text">
                       Eonsectetur adipisicing elit, sed do eiusmod
-                    </p>
+                    </h6>
                   </a>
                   <div class="filter-posts__box-date">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
@@ -475,9 +442,9 @@
                 <img class="filter-posts__image" src="images/blog/posts/4.jpg" alt="post image">
                 <div class="filter-posts__content-box">
                   <a class="filter-posts__content-link" href="#">
-                    <p class="filter-posts__content-text">
+                    <h6 class="filter-posts__content-text">
                       gnim ad minim veniam, quis nostrud
-                    </p>
+                    </h6>
                   </a>
                   <div class="filter-posts__box-date">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 20 20">
