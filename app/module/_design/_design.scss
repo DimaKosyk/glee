@@ -1,0 +1,50 @@
+.design{
+  padding: 50px 0 120px;
+  &__title{
+    text-align: center;
+    font-size: 36px;
+    color: #191919;
+    @extend %dmsans-700;
+    margin-bottom: 37px;
+  }
+  &__filter{
+    display: flex;
+    justify-content: center;
+  }
+  &__filter-btn{
+    border: none;
+    background-color: transparent;
+    color: #8b8b8b;
+    @extend %dmsans-700;
+    margin-bottom: 82px;
+    cursor: pointer;
+  }
+  &__filter-btn + .design__filter-btn{
+    margin-left: 20px;
+  }
+  &__filter-btn--active{
+    color: #292929;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 34px;
+    grid-column-gap: 21px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__item-info{
+    position: absolute;
+    max-width: 180px;
+    left: 38px;
+    top: 42px;
+  }
+  &__item-title{
+    color: $default;
+    margin-bottom: 5px;
+  }
+  &__item-subtitle{
+    color: #a9bfcb;
+  }
+}

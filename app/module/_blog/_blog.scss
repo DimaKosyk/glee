@@ -1,0 +1,111 @@
+.blog{
+  padding: 120px 0 0;
+  margin-bottom: -197px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  &__top-title{
+    font-size: 36px;
+    color: #191919;
+    @extend %dmsans-700;
+  }
+  &__team-title{
+    color: #243f4d;
+  }
+  &__top-link{
+    display: flex;
+    align-items: center;
+    color: #262626;
+    @extend %dmsans-700;
+    svg{
+      margin-left: 18px;
+    }
+  }
+  &__team-link{
+    color: #243f4d;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &__item-top{
+    position: relative;
+    margin-bottom: 35px;
+  }
+  &__item-top::before{
+    content: "News";
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+    width: 110px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #a3bbc8;
+    text-align: center;
+    transform: translateY(50%);
+    @extend %poppins-700;
+  }
+  &__item-bottom{
+    max-width: 310px;
+    height: 90px;
+    margin-left: 30px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__item-text{
+    font-size: 18px;
+    line-height: 0;
+    @extend %dmsans-500;
+    color: #262626;
+  }
+  &__item-box{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #222933;
+    margin: 15px 0 25px;
+  }
+  &__item-date{
+    margin-right: 30px;
+  }
+  &__item-author{
+    color: #222933;
+  }
+  &__item-date,
+  &__item-author{
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 4px;
+    }
+  }
+  &__item-date::before{
+    background-image: url('../images/icons/time.svg');
+  }
+  &__item-author::before{
+    background-image: url('../images/icons/user-grey.svg');
+  }
+  &__background{
+    min-height: 197px;
+    background-color: #fef7f0;
+  }
+}

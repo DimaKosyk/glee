@@ -1,0 +1,70 @@
+.filter{
+  &__item{
+    margin-bottom: 70px;
+  }
+  &__title{
+    margin-bottom: 30px;
+    font-size: 18px;
+    @extend %dmsans-700;
+    color: #243f4d;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+      &::after{
+      content: "";
+      position: absolute;
+      width: 38px;
+      height: 3px;
+      background-color: #a3bbc8;
+      top: 10px;
+      right: -55px;
+    }
+  }
+}
+
+.filter-price{
+  &__label{
+    display: flex;
+    justify-content: space-between;
+    color: #243f4d;
+    font-size: 14px;
+    line-height: 43px;
+    @extend %rubik-400;
+  }
+}
+
+.irs--flat {
+  height: 30px;
+}
+
+.irs--flat .irs-line {
+  top: 6px;
+  height: 3px;
+  background-color: #c2d2db;
+  border-radius: 0;
+}
+
+.irs--flat .irs-handle {
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-bar {
+  top: 6px;
+  height: 3px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle>i:first-child{
+  display: none;
+}
+
+.irs-from, .irs-to, .irs-single{
+  display: none;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  display: none;
+}

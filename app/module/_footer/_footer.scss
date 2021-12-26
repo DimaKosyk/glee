@@ -1,0 +1,96 @@
+.footer-top{
+  padding: 80px 0 75px;
+  display: flex;
+  border-bottom: 1px solid #dae4e9;
+  &__logo{
+    align-items: center;
+    margin-bottom: 26px;
+  }
+  &__contacts{
+    width: 270px;
+    margin-right: 30px;
+  }
+  &__address,
+  &__phone,
+  &__email{
+    display: block;
+  }
+  &__address,
+  &__text{
+    line-height: 24px;
+    @extend %rubik-400;
+    color: $footer-link-default;
+    margin-bottom: 5px;
+  }
+  &__nav{
+    width: 270px;
+    margin-right: 30px;
+  }
+  &__title{
+    color: #1f2044;
+    font-size: 16px;
+    line-height: 21px;
+    @extend %dmsans-700;
+    margin-bottom: 27px;
+    padding-top: 20px;
+  }
+  &__text{
+    margin-bottom: 35px;
+  }
+  &__item-form{
+    max-width: 270px;
+  }
+  &__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__form-input{
+    width: 170px;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    background-color: #fef7f0;
+    @extend %dmsans-400;
+    font-size: 12px;
+    &::placeholder{
+      color: #234969;
+    }
+  }
+  &__form-btn{
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+    @extend %dmsans-400;
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+}
+
+.footer-bottom{
+  padding: 35px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__copy{
+    font-size: 14px;
+    line-height: 32px;
+    @extend %rubik-400;
+    color: $footer-link-default;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item + .footer-bottom__item{
+    padding-left: 15px;
+  }
+  &__item + .footer-bottom__item::before{
+    content: "";
+    padding-left: 15px;
+    border-left: 1px solid $footer-link-default;
+  }
+}

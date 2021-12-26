@@ -1,0 +1,102 @@
+.header{
+  padding: 40px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  &__text{
+    padding-left: 15px;
+    font-size: 36px;
+    line-height: 58px;
+    color: $accent;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+    margin-left: 150px;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 35px;
+  }
+  &__list-link{
+    font-size: 15px;
+    line-height: 12px;
+    color: $accent;
+  }
+}
+
+.user-nav{
+  display: flex;
+  &__finder{
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    background-color: #edf1f4;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+  &__profile{
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+  }
+  &__finder img,
+  &__profile img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    border-radius: 50px;
+    padding: 0 22px;
+    background-color: #fcd7b6;
+    position: relative;
+  }
+  &__box-inner{
+    position: relative;
+    margin: 0 9px;
+  }
+  &__box-inner + .user-nav__box-inner::before{
+    content: "";
+    height: 32px;
+    width: 1px;
+    background-color: #fde7d3;
+    position: absolute;
+    top: 8px;
+    right: 55px;
+  }
+  &__link-img{
+    margin: 0 auto;
+    padding: 16px;
+  }
+  &__num{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 7px;
+    right: 6px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 17px;
+    color: #243f4d;
+    background-color: #fff;
+    @extend %dmsans-400;
+  }
+}
