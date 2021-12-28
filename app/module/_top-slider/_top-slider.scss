@@ -1,0 +1,104 @@
+.top-slider{
+  &__inner{
+    background-image: url('../images/top-slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 225px 0 75px;
+  }
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__title{
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    max-width: 470px;
+    margin-bottom: 40px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 30px;
+    color: $accent;
+    @extend %rubik-400;
+    margin-bottom: 40px;
+  }
+  &__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    padding: 23px 18px 23px 25px;
+    path{
+      fill: #fff;
+    }
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 205px;
+    li{
+      padding: 0 12px;
+      button{
+        padding: 0;
+        font-size: 11px;
+        line-height: 9px;
+        background-color: #fde3cc;
+        width: 29px;
+        height: 29px;
+        border: none;
+        border-radius: 50%;
+        color: #243f4d;
+        @extend %rubik-500;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  &__bottom{
+    background: #fef7f0;
+  }
+  &__bottom-items{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  &__bottom-item{
+    display: flex;
+    padding: 50px 0 45px;
+    position: relative;
+  }
+  &__bottom-inner{
+    margin-left: 25px;
+  }
+  &__bottom-title{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #414141;
+  }
+  &__bottom-text{
+    max-width: 215px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+  &__bottom-item + .top-slider__bottom-item::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: -160px;
+    background-color: #e8e4df;
+  }
+}

@@ -1,0 +1,14 @@
+.top{
+  background-color: #edf1f4;
+  min-height: 125px;
+  &__content{
+    text-align: center;
+    padding: 35px;
+  }
+  &__title{
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 24px;
+    @extend %rubik-400;
+  }
+}
