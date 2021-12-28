@@ -17,6 +17,9 @@
         <span class="logo__text">Glee.</span>
       </a>
       <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
         <ul class="menu__list">
           <li class="menu__list-item">
             <a class="menu__list-link" href="">Home +</a>
@@ -39,9 +42,11 @@
         </ul>
       </nav>
       <div class="user-nav">
-        <a class="user-nav__link user-nav__finder" href="#">
-          <img class="user-nav__link-img" src="images/icons/finder.svg" alt="user btn icon">
-        </a>
+        <div class="user-nav__search">
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/finder.svg" alt="user btn icon">
+          </a>
+        </div>
         <div class="user-nav__box">
           <div class="user-nav__box-inner">
             <a class="user-nav__link" href="#">
@@ -56,9 +61,11 @@
             </a>
           </div>
         </div>
-        <a class="user-nav__link user-nav__profile" href="#">
-          <img class="user-nav__link-img" src="images/icons/dots.svg" alt="user btn icon">
-        </a>
+        <div class="user-nav__profile">
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/dots.svg" alt="user btn icon">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -703,7 +710,7 @@
           NEWSLETTER
         </h6>
         <p class="footer-top__text">
-          Subscribe by our newsletter and get <br> update protidin.
+          Subscribe by our newsletter and get update protidin.
         </p>
         <form class="footer-top__form" action="#">
           <input class="footer-top__form-input" type="email" placeholder="Email address" required>

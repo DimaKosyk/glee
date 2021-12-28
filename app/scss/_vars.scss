@@ -2,33 +2,43 @@ $accent: #436372;
 $default: #1a1a1a;
 $footer-link-default: #7b7b7b;
 
-%dmsans-400{
-  font-family: 'DMSans-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%dmsans-500{
-  font-family: 'DMSans-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%dmsans-700{
-  font-family: 'DMSans-Bold', sans-serif;
+%rubik-700 {
+  font-family: 'Rubik-Bold', sans-serif;
   font-weight: 700;
 }
 
-%rubik-400{
+%rubik-500 {
+  font-family: 'Rubik-Medium',sans-serif;
+  font-weight: 500; 
+}
+
+%rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
 
-%rubik-500{
-  font-family: 'Rubik-Medium', sans-serif;
+%rubik-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
+%dmsans-700 {
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
   font-weight: 500;
 }
 
-%poppins-700{
-  font-family: 'Poppins-Bold', sans-serif;
+%dmsans-400 {
+  font-family: 'DMSans-Regular',sans-serif;
+  font-weight: 400;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold',sans-serif;
   font-weight: 700;
 }
 
