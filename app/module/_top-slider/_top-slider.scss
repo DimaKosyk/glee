@@ -6,6 +6,9 @@
     background-position: center center;
     padding: 225px 0 75px;
   }
+  // &__content{
+  //   width: 420px;
+  // }
   &__item{
     display: flex !important;
     justify-content: space-between;
@@ -19,6 +22,7 @@
     margin-bottom: 40px;
   }
   &__text{
+    max-width: 370px;
     font-size: 18px;
     line-height: 30px;
     color: $accent;
@@ -57,6 +61,7 @@
         border-radius: 50%;
         color: #243f4d;
         @extend %rubik-500;
+        cursor: pointer;
       }
       &.slick-active{
         button{
@@ -100,5 +105,107 @@
     top: 0;
     left: -160px;
     background-color: #e8e4df;
+  }
+}
+
+@media (max-width: 1500px){
+  .top-slider{
+    &__bottom-item + .top-slider__bottom-item::before{
+      content: "";
+      left: -100px;
+    }
+  }
+}
+
+@media (max-width: 1300px){
+  .top-slider{
+    &__bottom-item + .top-slider__bottom-item::before{
+      content: "";
+      left: -50px;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .top-slider{
+    &__inner{
+      padding: 100px 0 45px;
+    }
+    &__img{
+      max-width: 50%;
+      object-fit: contain;
+    }
+    &__item{
+      align-items: center;
+    }
+    .slick-dots{
+      margin-top: 100px;
+    }
+    &__title {
+      font-size: 52px;
+      line-height: 50px;
+    }
+    &__bottom-item + .top-slider__bottom-item::before{
+      content: "";
+      left: -25px;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .top-slider{
+    &__bottom-items{
+      display: block;
+    }
+    &__bottom-item{
+      padding: 7px 0 7px;
+    }
+    &__bottom-title{
+      margin-bottom: 4px;
+    }
+    &__bottom-text{
+      line-height: 25px;
+    }
+    &__bottom-inner{
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .top-slider{
+    &__inner{
+      padding: 30px 0;
+    }
+    .top-slider__img{
+      display: none;
+    }
+    .slick-dots{
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .top-slider{
+    &__title,
+    &__text{
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 40px;
+    }
+    .slick-dots{
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .top-slider{
+    &__bottom-item + .top-slider__bottom-item{
+      border-top: 1px solid #e8e4df;
+    }
   }
 }

@@ -8,15 +8,14 @@
     margin-bottom: 37px;
   }
   &__filter{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 82px;
   }
   &__filter-btn{
     border: none;
     background-color: transparent;
     color: #8b8b8b;
     @extend %dmsans-700;
-    margin-bottom: 82px;
     cursor: pointer;
   }
   &__filter-btn + .design__filter-btn{
@@ -46,5 +45,44 @@
   }
   &__item-subtitle{
     color: #a9bfcb;
+  }
+  &__item-img{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1100px){
+  .design{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(max-width: 800px){
+  .design{
+    padding: 40px 0 70px;
+    &__item-info{
+      left: 15px;
+      top: 15px;
+    }
+  }
+}
+
+@media(max-width: 620px){
+  .design{
+    padding: 30px 0 50px;
+    &__title{
+      margin-bottom: 20px;
+    }
+    &__items{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__filter{
+      margin-bottom: 20px;
+    }
+    &__filter-btn + .design__filter-btn {
+      margin-left: 0px;
+    }
   }
 }
