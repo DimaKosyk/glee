@@ -22,3 +22,23 @@
     @extend %rubik-400;
   }
 }
+
+@media(max-width:500px){
+  .terms{
+    padding-top: 25px;
+    &__title,
+    &__info{
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    &__list-item,
+    &__text{
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+    &__info{
+      padding-top: 15px;
+    }
+  }
+}

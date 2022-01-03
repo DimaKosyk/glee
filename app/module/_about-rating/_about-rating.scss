@@ -40,3 +40,37 @@
     color: #243f4d;
   }
 }
+
+@media(max-width: 800px){
+  .rating{
+    &__items {
+      padding: 30px 0;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-top: 15px;
+      margin-left: 20px;
+    }
+    &__img-box {
+      margin: 0 auto 5px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .rating{
+    &__text {
+      font-size: 12px;
+    }
+    &__title {
+      font-size: 26px;
+    }
+    &__item {
+      margin-left: 10px;
+    }
+  }
+}
+

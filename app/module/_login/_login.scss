@@ -1,7 +1,7 @@
 .modal{
   padding: 120px 0 120px;
   &__form{
-    width: 470px;
+    max-width: 470px;
     margin: 0 auto;
   }
   &__label{
@@ -50,5 +50,30 @@
     border: 2px solid #a3bbc8;
     font-size: 18px;
     color: #243f4d;
+  }
+}
+
+@media(max-width:500px){
+  .modal{
+    padding: 40px 0 40px;
+    &__label {
+      margin-bottom: 10px;
+    }
+    &__input{
+      height: 45px;
+    }
+    &__btn{
+      padding: 15px 0;
+      margin-bottom: 20px;
+    }
+    &__link {
+      padding: 10px 0;
+    }
+    &__box{
+      margin-bottom: 15px;
+    }
+    span{
+      margin-bottom: 15px;
+    }
   }
 }
