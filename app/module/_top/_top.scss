@@ -12,3 +12,16 @@
     @extend %rubik-400;
   }
 }
+
+@media(max-width:500px){
+  .top{
+    min-height: 0px;
+    &__content{
+      padding: 15px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 20px;
+    }
+  }
+}

@@ -4,6 +4,14 @@ $(function(){
     $('.menu__list').toggleClass('menu__list--active');
   });
 
+  $('.product-grid__filters-btn').on('click', function(){
+    $('.product-grid__filters').slideToggle();
+  });
+
+  $('.product-list__filters-btn').on('click', function () {
+    $('.product-list__filters').slideToggle();
+  });
+
   $('.product-detail__top-item').on('click', function(e){
     e.preventDefault();
     $('.product-detail__top-item').removeClass('product-detail__top-item--active');

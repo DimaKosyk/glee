@@ -114,11 +114,8 @@
   &__item-author::before{
     background-image: url('../images/icons/user-grey.svg');
   }
-  &__item-img{
-    border-radius: 5px;
-  }
   &__background{
-    min-height: 197px;
+    min-height: 170px;
     background-color: #fef7f0;
   }
 }

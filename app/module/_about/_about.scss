@@ -4,6 +4,7 @@
   &__img{
     width: 570px;
     height: 675px;
+    object-fit: cover;
     margin-right: 45px;
   }
   &__info{
@@ -45,7 +46,8 @@
       position: absolute;
       background-color: #ebeef3;
       height: 2px;
-      width: 500px;
+      max-width: 500px;
+      width: 100%;
       bottom: 0;
       left: 0;
     }
@@ -83,5 +85,97 @@
   &__item-text{
     line-height: 17px;
     color: #4c4c4c;
+  }
+}
+
+@media(max-width: 1200px){
+  .experience{
+    &__img{
+      width: 40%;
+    }
+    &__item + .experience__item {
+      margin-left: 45px;
+    }
+  }
+}
+
+@media(max-width: 900px){
+  .experience{
+    padding: 30px 0;
+    &__info {
+      padding-top: 15px;
+    }
+    &__info-text {
+      line-height: 15px;
+      margin-top: -5px;
+    }
+    &__info-box {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 25px;
+      margin-bottom: 15px;
+    }
+    &__info-num {
+      font-size: 70px;
+      line-height: 32px;
+      margin-right: 12px;
+    }
+    &__text{
+      padding-bottom: 30px;
+    }
+    &__img{
+      width: 20%;
+      height: 400px;
+      margin-right: 20px;
+    }
+    &__item + .experience__item::before {
+      left: -15px;
+      top: -15px;
+    }
+    &__items {
+      padding-top: 30px;
+    }
+    &__item-box {
+      padding-left: 10px;
+    }
+    &__item-title {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+    &__item + .experience__item {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .experience{
+    &__img{
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .experience{
+    &__items {
+      display: block;
+    }
+    &__item + .experience__item::before {
+      display: none;
+    }
+    &__item + .experience__item {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    &__text {
+      padding-bottom: 15px;
+    }
+    &__items {
+      padding-top: 15px;
+    }
   }
 }

@@ -38,6 +38,9 @@
       }
     }
   }
+  &__item + .contacts__item{
+    margin-left: 5px;
+  }
   &__item-box{
     width: 80px;
     height: 80px;
@@ -70,6 +73,7 @@
   }
   &__form{
     width: 620px;
+    margin-right: 10px;
   }
   &__form-box{
     display: flex;
@@ -110,7 +114,7 @@
     background-color: #fafafa;
     background-image: url('../images/blog/icons/comment.svg');
     background-repeat: no-repeat;
-    background-position: 588px 15px;
+    background-position: 97.7% 15px;
     margin-bottom: 30px;
   }
   &__form-btn{
@@ -125,5 +129,46 @@
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
+  }
+}
+
+@media(max-width:1100px){
+  .contacts{
+    &__message{
+      display: block;
+    }
+    &__form {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width:900px){
+  .contacts{
+    padding-top: 50px;
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    &__item{
+      height: 290px;
+      width: 275px;
+      margin-top: 10px;
+    }
+    &__item + .contacts__item{
+      margin-left: 5px;
+    }
+    &__item-box {
+      margin: 30px 0 25px;
+    }
   }
 }
