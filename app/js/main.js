@@ -33,7 +33,17 @@ $(function(){
     asNavFor: '.product-slide__thumb',
     draggable: false,
     arrows: false,
-    fade: true
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+    ]
   });
 
   $('.filter-price__input').ionRangeSlider({
@@ -61,7 +71,27 @@ $(function(){
 
   $('.product-detail__related-slider').slick({
     slidesToShow: 4,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1151,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.related-prev').on('click', function(e) {
