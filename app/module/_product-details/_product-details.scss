@@ -67,6 +67,9 @@
     font-size: 18px;
     line-height: 50px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     & + .product-detail__top-item{
       margin-left: 13px;
     }
@@ -113,8 +116,10 @@
       border-color: #a3bbc8;
     }
   }
-  &__related-item{
-    margin: 30px 0;
+  &__related-items{
+    margin: 15px 0;
+    width: 270px;
+    height: 380px;
   }
 }
 
@@ -226,11 +231,10 @@
   }
   &__big{
     width: 387px;
-  }
-  &__big-item{
-    width: 387px;
     height: 530px;
     border: 2px solid #f2f2f2;
+  }
+  &__big-item{
     padding: 60px;
   }
 }
@@ -332,5 +336,122 @@
   }
   &__hover-link + .products__hover-link{
     margin-left: 16px;
+  }
+}
+
+@media (max-width: 1200px){
+  .product-slide{
+    &__thumb{
+      display: none;
+    }
+  }
+
+  .product-detail{
+    padding-top: 60px;
+    &__slide {
+      width: auto;
+      margin-right: 40px;
+    }
+    &__price {
+      margin-bottom: 20px;
+    }
+    &__title {
+      margin: -5px 0 25px;
+    }
+    &__related-item{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .product-detail{
+    &__related {
+      padding-top: 30px;
+    }
+    &__inner {
+      display: block;
+    }
+    &__slide {
+      margin-bottom: 20px;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__slide {
+      margin-right: 0px;
+    }
+  }
+
+  .product-slide{
+    &__big{
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .product-detail{
+    &__tabs{
+      padding-top: 30px;
+    }
+    &__tabs-top{
+      display: block;
+      margin-bottom: 25px;
+    }
+    &__top-item{
+      width: 100%;
+    }
+    &__top-item + .product-detail__top-item{
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .product-detail{
+    &__btn {
+      display: block;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+    &__title {
+      margin: -5px 0 15px;
+    }
+    &__form {
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__price {
+      margin-bottom: 10px;
+    }
+    &__related-title {
+      font-size: 30px;
+    }
+    &__related-buttons {
+      display: none;
+    }
+    &__related-top {
+      margin-bottom: 25px;
+    }
+    .star-line {
+      margin-bottom: 20px;
+    }
+  }
+
+  .product-slide{
+    &__big {
+      width: 250px;
+      height: 320px;
+      img{
+        max-width: 90%;  
+      }
+    }
+    &__big-item {
+      padding: 30px;
+    }
   }
 }
